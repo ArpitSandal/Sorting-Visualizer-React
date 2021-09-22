@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Sorting-Visualizer-React/static/css/main.1ca48609.chunk.css",
-    "main.js": "/Sorting-Visualizer-React/static/js/main.0ccdbba1.chunk.js",
-    "main.js.map": "/Sorting-Visualizer-React/static/js/main.0ccdbba1.chunk.js.map",
+    "main.js": "/Sorting-Visualizer-React/static/js/main.e33d27fb.chunk.js",
+    "main.js.map": "/Sorting-Visualizer-React/static/js/main.e33d27fb.chunk.js.map",
     "runtime-main.js": "/Sorting-Visualizer-React/static/js/runtime-main.86e24e3e.js",
     "runtime-main.js.map": "/Sorting-Visualizer-React/static/js/runtime-main.86e24e3e.js.map",
     "static/js/2.7851e38a.chunk.js": "/Sorting-Visualizer-React/static/js/2.7851e38a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.86e24e3e.js",
     "static/js/2.7851e38a.chunk.js",
     "static/css/main.1ca48609.chunk.css",
-    "static/js/main.0ccdbba1.chunk.js"
+    "static/js/main.e33d27fb.chunk.js"
   ]
 }
