@@ -5,6 +5,7 @@ import BubbleSort from "./Sorting-algorithms/BubbleSort";
 import InsertionSort from "./Sorting-algorithms/InsertionSort";
 import QuickSort from "./Sorting-algorithms/QuickSort";
 import MergeSort from "./Sorting-algorithms/MergeSort";
+import HeapSort from "./Sorting-algorithms/HeapSort";
 
 class App extends Component {
   constructor() {
@@ -118,6 +119,7 @@ class App extends Component {
         // If this array is sorted change their color
         if (this.checkSorted(arr, sortedarr)) {
           // Enabling the buttons and sidebar
+
           let elm = document.getElementsByClassName("btn");
           for (let j = 0; j < elm.length; j++) {
             elm[j].disabled = false;
@@ -129,11 +131,13 @@ class App extends Component {
           for (let j = 0; j < arr.length; j++)
             bararr[j].style.backgroundColor = "white";
 
-          for (let j = 0; j < arr.length; j++) {
-            setTimeout(() => {
-              bararr[j].style.backgroundColor = "#53fc11";
-            }, j * 10); // For changing the color after array is sorted
-          }
+          setTimeout(() => {
+            for (let j = 0; j < arr.length; j++) {
+              setTimeout(() => {
+                bararr[j].style.backgroundColor = "#53fc11";
+              }, j * 15); // For changing the color after array is sorted
+            }
+          }, 85);
         }
       }, i * this.state.speed);
     }
@@ -164,6 +168,11 @@ class App extends Component {
     this.animateSort(animation);
   }
 
+  heapSort() {
+    let arr = this.state.arr.slice();
+    const animation = HeapSort(arr);
+    this.animateSort(animation);
+  }
   //All the components that are being rendered
   render() {
     // Setting the Bar component setting their height
@@ -220,6 +229,15 @@ class App extends Component {
             className="btn btn-light"
           >
             Merge Sort
+          </button>
+          <button
+            onClick={() => {
+              this.heapSort();
+            }}
+            type="button"
+            className="btn btn-light"
+          >
+            Heap Sort
           </button>
           <div className="slider">
             <input
